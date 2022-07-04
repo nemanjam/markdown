@@ -1,6 +1,8 @@
 # Next.js Prisma Boilerplate
 
-- logo, gif, description
+- logo, badges, gif, description
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nemanjam/nextjs-prisma-boilerplate/Build%20and%20push%20Docker%20image?label=build%20docker%20image&logo=docker)
 
 ## Demo
 
@@ -10,9 +12,9 @@
 
 ## How to use this
 
-## Motivation
-
 ## Features
+
+### Motivation
 
 ## Tech stack
 
@@ -28,9 +30,9 @@
 
 ## Next.js (frontend)
 
-## Next.js (api)
-
 ## next-auth
+
+## Next.js (api)
 
 ## Database (Prisma)
 

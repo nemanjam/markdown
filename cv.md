@@ -1,8 +1,8 @@
-# markdown
+# CV
 
 - cv testing, react query, next, react, tailwind, cypress, architectures, databases, devcontainers, traefik, homelab, projects, github actions
 
-- literature section
+- literature sections
 
 ---
 
