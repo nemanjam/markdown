@@ -1,6 +1,6 @@
 # Next.js Prisma Boilerplate
 
-<p align="center"><img width="30%" src="readme-assets/banner.png"></p>
+<p align="center"><img width="50%" src="readme-assets/banner.png"></p>
 
 [![Run unit, integration and e2e tests](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/tests.yml/badge.svg)](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/tests.yml)
 [![Build and push Docker image](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/build-docker-image.yml/badge.svg)](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/build-docker-image.yml)
