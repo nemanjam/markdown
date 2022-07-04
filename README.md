@@ -7,6 +7,8 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nemanjam/nextjs-prisma-boilerplate/Deploy%20to%20VPS?label=deployment%20live&logo=ubuntu)
 ![GitHub](https://img.shields.io/github/license/nemanjam/nextjs-prisma-boilerplate)
 
+<p align="center"><img src="readme-assets/banner.png"></p>
+
 - logo, badges, gif, description
 
 ## Demo
