@@ -16,9 +16,7 @@
 
 ## Screenshots
 
-
-https://user-images.githubusercontent.com/9990165/177365576-ac856823-9d1d-46f0-80cf-7933df46956a.mp4
-
+https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-806d-21e806465836.mp4
 
 ## How to use this
 
