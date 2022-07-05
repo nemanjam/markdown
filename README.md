@@ -1,10 +1,13 @@
 # Next.js Prisma Boilerplate
 
-<p align="center"><img width="50%" src="readme-assets/banner.png"></p>
+<p align="center"><img width="50%" src="readme-assets/banner-1280x640-200kb.png"></p>
 
 [![Run unit, integration and e2e tests](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/tests.yml/badge.svg)](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/tests.yml)
 [![Build and push Docker image](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/build-docker-image.yml/badge.svg)](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/build-docker-image.yml)
 [![Deploy to VPS](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/deploy.yml/badge.svg)](https://github.com/nemanjam/nextjs-prisma-boilerplate/actions/workflows/deploy.yml)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/nemanjamitic/nextjs-prisma-boilerplate/latest?logo=docker)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nemanjam/nextjs-prisma-boilerplate/Deploy%20to%20VPS?label=deployment%20live&logo=ubuntu)
+![GitHub](https://img.shields.io/github/license/nemanjam/nextjs-prisma-boilerplate)
 
 - logo, badges, gif, description
 
