@@ -19,9 +19,9 @@
 https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-806d-21e806465836.mp4
 
 <p align="center">
-    <img style="display: inline-block; max-width: 250px" src="readme-assets/mobile-screens/Screenshot1.png">
-    <img style="display: inline-block; max-width: 250px" src="readme-assets/mobile-screens/Screenshot2.png">
-    <img style="display: inline-block; max-width: 250px" src="readme-assets/mobile-screens/Screenshot3.png">
+    <img width="250px" src="readme-assets/mobile-screens/Screenshot1.png">
+    <img width="250px" src="readme-assets/mobile-screens/Screenshot2.png">
+    <img width="250px" src="readme-assets/mobile-screens/Screenshot3.png">
 </p>
 
 ## How to use this
