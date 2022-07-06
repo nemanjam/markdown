@@ -37,3 +37,10 @@
     <img width="150px" src="docs/readme-assets/mobile-screens/Screenshot14.png">
     <img width="150px" src="docs/readme-assets/mobile-screens/Screenshot15.png">
 </p>
+
+Here you can find all fundamental decisions for an app already made for you:
+
+- **frontend architecture** - pages, layouts, views, components, hooks, authentication, styling, theming, data fetching, state management, error handling, forms and validation
+- **backend architecture** - controller and service layers, interaction with database, authentication, error handling in both API and getServerSideProps, validation, file uploads and serving
+-
+- **test configuration** -

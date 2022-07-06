@@ -12,7 +12,7 @@
 
 This is full stack boilerplate built around latest Next.js stack. It is composed of the best practices described in official docs combined with my decisions derived from my own experience and knowledge that I have gathered from working with other people.
 
-Don't spend next 3 months making architectural decisions, choosing libraries, setting up development environments and CI/CD pipelines, writing boilerplate code, _instead install this boilerplate in 15 minutes and start working on your features **today**._
+Don't spend next 3 months making architectural decisions, choosing libraries, setting up development environment and CI/CD pipelines, writing boilerplate code, _instead install this boilerplate in 15 minutes and start working on your features **today**._
 
 ## Demo
 
@@ -26,18 +26,42 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 
 ## Features
 
-Here you can find all fundamental decisions for an app already made for you:
+#### Frontend:
 
-- **frontend architecture** - pages, layouts, views, components, hooks, authentication, styling, theming, data fetching, state management, error handling, forms and validation
-- **backend architecture** - controller and service layers, interaction with database, authentication, error handling in both API and getServerSideProps, validation, file uploads and serving
--
-- **test configuration** -
+- authentication with `next-auth` and Facebook, Google and Credentials providers
+- decoupled routing and display logic with separate `pages` and `views` folders
+- reusable per-page layouts
+- styling with TailwindCSS and SCSS in separate `.scss` files so JSX is nice and clean
+- classes named following BEM convention
+- support for themes, implemented as Tailwind plugin
+- Typescript with enabled `strict` and `strictNullChecks` options
+- all Request/Response models types defined in a single place and reused in both client and API
 
-#### How you can use this
+#### Backend:
 
-#### Motivation
+- custom server with both `http` and `https` servers and static folder for serving files at runtime
+- Prisma ORM with Postgres database for managing data
+- seed script used for development, integration and e2e testing
+- decoupled controller and service layers for clear reasoning and easier testing
+- `next-connect` API handlers with clean middleware syntax
+- global error handlers for both API and `getServerSideProps`
+- request body, query and params validated with Zod schemas (reused on client)
+- private API routes protected with auth and admin middleware
+- upload images with Multer
+
+#### Testing:
+
+#### Development environment:
+
+#### Deployment:
+
+#### Philosophy:
+
+#### Motivation:
 
 There is a lot of talk, and buzz around JavaScript frameworks, a lot of theory, tutorials, opinions... but lets actually take what we read in documentations and check how it works in practice and see if we can build something useful and meaningful with it.
+
+## How you can use this
 
 ## Tech stack
 
