@@ -33,6 +33,8 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - reusable per-page layouts
 - styling with TailwindCSS and SCSS in separate `.scss` files so JSX is nice and clean
 - classes named following BEM convention
+- fully responsive design on mobile
+- naturally handled specificity, not a single `!important` statement in entire code
 - support for themes, implemented as Tailwind plugin
 - current theme is persisted in local storage using `next-themes`
 - Typescript with enabled `strict` and `strictNullChecks` options
@@ -47,6 +49,9 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - paginated queries for both posts and users
 - custom error pages (404 and 500)
 - basic SEO setup using custom `Head` component
+- forms done with React Hook Form
+- validation with Zod schemas reused on both client and server
+- image uploads with React Dropzone
 
 #### Backend:
 
