@@ -34,20 +34,34 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - styling with TailwindCSS and SCSS in separate `.scss` files so JSX is nice and clean
 - classes named following BEM convention
 - support for themes, implemented as Tailwind plugin
+- current theme is persisted in local storage using `next-themes`
 - Typescript with enabled `strict` and `strictNullChecks` options
 - all Request/Response models types defined in a single place and reused in both client and API
+- all routes and redirects defined in a single place as constants
+- error handling for queries done with ErrorBoundary
+- loading state done with Suspense
+- authenticated user passed from root via context and available synchronously
+- images loaded using Next.js Image component with custom loader (backend part not implemented)
+- data fetching and server state implemented with React Query and custom hooks
+- initial query data passed from `getServerSideProps` using Hydrate provider
+- paginated queries for both posts and users
+- custom error pages (404 and 500)
+- basic SEO setup using custom `Head` component
 
 #### Backend:
 
 - custom server with both `http` and `https` servers and static folder for serving files at runtime
 - Prisma ORM with Postgres database for managing data
 - seed script used for development, integration and e2e testing
+- Prisma exclude utilities for omitting private fields from API responses
+- Prisma schema with User and Post models
 - decoupled controller and service layers for clear reasoning and easier testing
 - `next-connect` API handlers with clean middleware syntax
 - global error handlers for both API and `getServerSideProps`
 - request body, query and params validated with Zod schemas (reused on client)
 - private API routes protected with auth and admin middleware
 - upload images with Multer
+- API with CRUD operations on User and Post models
 
 #### Testing:
 
