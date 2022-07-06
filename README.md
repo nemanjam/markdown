@@ -43,7 +43,7 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - error handling for queries done with ErrorBoundary
 - loading state done with Suspense
 - authenticated user passed from root via context and available synchronously
-- images loaded using Next.js Image component with custom loader (backend part not implemented)
+- images loaded using Next.js Image component with custom loader
 - data fetching and server state implemented with React Query and custom hooks
 - initial query data passed from `getServerSideProps` using Hydrate provider
 - paginated queries for both posts and users
@@ -60,13 +60,15 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - seed script used for development, integration and e2e testing
 - Prisma exclude utilities for omitting private fields from API responses
 - Prisma schema with User and Post models
-- decoupled controller and service layers for clear reasoning and easier testing
+- decoupled controller and service layers for clear reasoning and easy testing
 - `next-connect` API handlers with clean middleware syntax
 - global error handlers for both API and `getServerSideProps`
 - request body, query and params validated with Zod schemas (reused on client)
 - private API routes protected with auth and admin middleware
 - upload images with Multer
 - API with CRUD operations on User and Post models
+
+<!-- lighthouse score screenshot -->
 
 #### Testing:
 
