@@ -12,7 +12,7 @@
 
 This is full stack boilerplate built around latest Next.js stack. It is composed of the best practices described in official docs combined with my decisions derived from my own experience and knowledge that I have gathered from working with other people.
 
-Don't spend next 3 months making architectural decisions, choosing libraries, setting up development environment and CI/CD pipelines, writing boilerplate code, _instead install this boilerplate in 15 minutes and start working on your features **today**._
+Don't spend next 3 months making architectural decisions, choosing libraries, setting up dev and prod environments and CI/CD pipelines, writing boilerplate code, _instead install this boilerplate in 15 minutes and start working on your features **today**._
 
 ## Demo
 
@@ -60,10 +60,8 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - unit tests for API controllers with Supertest client and mocked services
 - API services unit tests with mocked Prisma client singleton instance
 - integration tests (controller + service) per API handler with Supertest client and test database
-- separate Jest projects for client, server unit and server integration tests
 - code coverage for all Jest tests, statements 43%, branches 47%, functions 39%, lines 43%
 - Cypress end-to-end tests with configured ESLint and Typescript
-- example tests for Home, navigation, edit user and post and register new user
 - Cypress task to seed and teardown test database, commands to filter errors, seed and login
 - custom Docker image with Cypress installed on top of official base image
 - both Jest and Cypress are configured to run locally, in Docker and in Github Actions
