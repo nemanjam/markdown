@@ -73,6 +73,7 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 
 #### Testing:
 
+- Jest and `testing-library/react` for unit and integration tests
 - React unit tests for components and hooks
 - React integration tests for views
 - unit tests for React Query hooks
@@ -81,7 +82,7 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - new QueryClient instance per each test to ensure isolated tests with React Query
 - Blob polyfill for mocking images in client tests
 - load test environment variables in Jest from `.env.test*` files
-- configured jest-preview for visual debugging client tests
+- `jest-preview` configured for visual debugging client tests
 - unit tests for API controllers with supertest client and mocked services
 - API services unit tests with mocked Prisma client singleton instance
 - integration tests (controller + service) per API handler with supertest client and test database
@@ -90,8 +91,14 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - code coverage configuration that includes all Jest tests
 - code coverage currently: statements 43%, branches 47%, functions 39%, lines 43%
 - main goal was to have configuration and example for every **kind** of test (client, server, unit, integration, components, hooks, controllers, services)
-
-<!-- e2e -->
+- Cypress end-to-end tests with configured ESLint and Typescript
+- example e2e tests for Home page, main navigation, edit user and post and register new user
+- `testing-library/cypress` is used for querying elements in Cypress tests
+- Cypress task to seed and teardown test database
+- Cypress commands to filter errors, seed and login as admin
+- custom Docker image with Cypress installed on top of official base image
+- `docker-compose.e2e.yml` with production built app, configured test database and Cypress containers with `.env.test*` files
+- Cypress is configured to run locally, in Docker and in Github Actions
 
 #### Development environment:
 
