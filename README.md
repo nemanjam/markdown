@@ -29,45 +29,29 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 #### Frontend:
 
 - authentication with `next-auth` and Facebook, Google and Credentials providers
-- decoupled routing and display logic with separate `pages` and `views` folders
-- reusable per-page layouts
-- styling with TailwindCSS and SCSS in separate `.scss` files so JSX is nice and clean
-- classes named following BEM convention
-- fully responsive design on mobile
-- naturally handled specificity, not a single `!important` statement in entire code
-- support for themes, implemented as Tailwind plugin
-- current theme is persisted in local storage using `next-themes`
-- Typescript with enabled `strict` and `strictNullChecks` options
-- all Request/Response models types defined in a single place and reused in both client and API
-- all routes and redirects defined in a single place as constants
-- error handling for queries done with ErrorBoundary
-- loading state done with Suspense
-- authenticated user passed from root via context and available synchronously
-- images loaded using Next.js Image component with custom loader
-- data fetching and server state implemented with React Query and custom hooks
-- initial query data passed from `getServerSideProps` using Hydrate provider
-- paginated queries for both posts and users
-- custom error pages (404 and 500)
-- basic SEO setup using custom `Head` component
-- forms done with React Hook Form
-- validation with Zod schemas reused on both client and server
-- image uploads with React Dropzone
+- uses all Next.js features - routing, SSR, SEO, Image component, error pages, `.env*` files...
+- scalable component structure `pages` -> `layouts` -> `views` -> `components`
+- fully responsive design with TailwindCSS, SCSS and BEM (not a single `!important` statement in entire code)
+- themes implemented as a custom Tailwind plugin
+- fully configured TypeScript, ESLint and Prettier
+- loading and error states handled with Suspense and ErrorBoundary
+- forms with React Hook Form, Zod validation schemas and React Dropzone
+- data fetching and server state with React Query and custom hooks
 
 #### Backend:
 
-- custom server with both `http` and `https` servers and static folder for serving files at runtime
-- Prisma ORM with Postgres database for managing data
-- seed script used for development, integration and e2e testing
-- Prisma exclude utilities for omitting private fields from API responses
-- Prisma schema with User and Post models
+- uses Next.js API with custom server and static folder for serving files at runtime
+- Prisma ORM with Postgres database for managing data with Faker seed script
+- Prisma schema with User and Post models and API with CRUD operations
 - decoupled controller and service layers for clear reasoning and easy testing
-- `next-connect` API handlers with clean middleware syntax
-- global error handlers for both API and `getServerSideProps` with custom error class
-- request body, query and params validated with Zod schemas (reused on client)
-- private API routes protected with auth and admin middleware
-- upload images with Multer
-- API with CRUD operations on User and Post models
-- full Postgres text search for getUsers and getPosts services
+- `next-connect` API handlers with middleware for validation and protected routes
+- global error handling for both API and `getServerSideProps` with custom error class
+- request objects validated with Zod schemas (reused on client)
+- images upload with Multer
+
+#### Testing:
+
+---
 
 <!-- lighthouse score screenshot -->
 
@@ -83,9 +67,9 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 - Blob polyfill for mocking images in client tests
 - load test environment variables in Jest from `.env.test*` files
 - `jest-preview` configured for visual debugging client tests
-- unit tests for API controllers with supertest client and mocked services
+- unit tests for API controllers with Supertest client and mocked services
 - API services unit tests with mocked Prisma client singleton instance
-- integration tests (controller + service) per API handler with supertest client and test database
+- integration tests (controller + service) per API handler with Supertest client and test database
 - separate Jest projects for client, server unit and server integration tests
 - all tests are configured to be executed locally, in Docker and in Github Actions
 - code coverage configuration that includes all Jest tests
@@ -102,7 +86,11 @@ https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-8
 
 #### Development environment:
 
+#### CI/CD:
+
 #### Deployment:
+
+#### Docs:
 
 #### Philosophy:
 
