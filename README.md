@@ -112,7 +112,7 @@ There are a lot of talk, theory, opinions, and buzz around JavaScript frameworks
 
 <!-- - local, Docker, devcontainers, Gitpod -->
 
-## Installation (Development environments)
+## Installation
 
 This project has 3 available development environments: 1. local, 2. Docker (with and without devcontainers) and 3. Gitpod. You can pick whatever environment you prefer.
 
@@ -146,13 +146,21 @@ APP_ENV=local
 NEXTAUTH_URL=${SITE_PROTOCOL}://${SITE_HOSTNAME}:${PORT}
 ```
 
-Create `.env.development.local` and fill in required **private** environment variables. The only required variables are for Postgres database connection and JWT secret. Facebook and Google credentials are optional and used only for OAuth login. Facebook login requires `https` for redirect url. You can set any values for `POSTGRES_USER`, `POSTGRES_PASSWORD` and `POSTGRES_DB`.
+Create `.env.development.local` file.
 
 ```bash
 # create local file form example file
 cp .env.development.local.example .env.development.local
 
-# fill in required private environment variables in `.env.development.local`
+```
+
+Fill in required **private** environment variables. The only required variables are for Postgres database connection and JWT secret.
+
+> Facebook and Google credentials are optional and used only for OAuth login. Facebook login requires `https` for redirect url. You can set any values for `POSTGRES_USER`, `POSTGRES_PASSWORD` and `POSTGRES_DB`.
+
+```bash
+# .env.development.local
+
 # set database connection
 POSTGRES_HOSTNAME=localhost
 POSTGRES_PORT=5432
@@ -176,7 +184,7 @@ GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 ```
 
-After all variables are set you can run Postgres database inside the Docker container, run prisma migrations that will create SQL tables from `schema.prisma` and seed database with data.
+After all variables are set you can run Postgres database inside the Docker container, run Prisma migrations that will create SQL tables from `schema.prisma` and seed database with data.
 
 ```bash
 # run database container
