@@ -114,7 +114,11 @@ There are a lot of talk, theory, opinions, and buzz around JavaScript frameworks
 
 ## Installation (Development environments)
 
-1. local environment (quickstart)
+This project has 3 available development environments: 1. local, 2. Docker (with and without devcontainers) and 3. Gitpod. You can pick whatever environment you prefer.
+
+#### 1. local environment
+
+Clone repository and install dependencies.
 
 ```bash
 # clone repository
@@ -123,12 +127,28 @@ cd nextjs-prisma-boilerplate
 
 # install dependencies
 yarn install
+```
 
-# fill in required public environment variables in `.env.development`
+Fill in required **public** environment variables in `.env.development`. Fastest way is to run the app with `http` server.
+
+> You need `https` locally only for Facebook OAuth login. For that you need `mkcert` to install certificates for `localhost`, instructions for that you can find in `docs` folder.
+
+Leave `PORT` as 3001, it is hardcoded in multiple places, if you want to change it you must edit all of them (i.e. all `Dockerfile.*` and `docker-compose.*.yml`)
+
+```bash
+# .env.development
 SITE_PROTOCOL=http
 SITE_HOSTNAME=localhost
 PORT=3001
 
+# don't touch these two variables
+APP_ENV=local
+NEXTAUTH_URL=${SITE_PROTOCOL}://${SITE_HOSTNAME}:${PORT}
+```
+
+Create `.env.development.local` and fill in required **private** environment variables. The only required variables are for Postgres database connection and JWT secret. Facebook and Google credentials are optional and used only for OAuth login. Facebook login requires `https` for redirect url. You can set any values for `POSTGRES_USER`, `POSTGRES_PASSWORD` and `POSTGRES_DB`.
+
+```bash
 # create local file form example file
 cp .env.development.local.example .env.development.local
 
@@ -140,7 +160,9 @@ POSTGRES_USER=postgres_user
 POSTGRES_PASSWORD=password
 POSTGRES_DB=npb-db-dev
 
-# fill in rest of the secrets
+# don't edit this expanded variable
+DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOSTNAME}:${POSTGRES_PORT}/${POSTGRES_DB}?schema=public
+
 # jwt secret
 SECRET=some-long-random-string
 
@@ -152,7 +174,11 @@ FACEBOOK_CLIENT_SECRET=
 # Google
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
+```
 
+After all variables are set you can run Postgres database inside the Docker container, run prisma migrations that will create SQL tables from `schema.prisma` and seed database with data.
+
+```bash
 # run database container
 yarn docker:db:dev:up
 
@@ -161,9 +187,12 @@ yarn prisma:migrate:dev:env
 
 # seed database with data
 yarn prisma:seed:dev:env
+```
 
-# start the app, everything is ready now
-# open http://localhost:3001 in browser
+At this point everything is ready, you can now start the app. Open `http://localhost:3001` in browser to see the running app.
+
+```bash
+# start the app in dev mode
 yarn dev
 ```
 
