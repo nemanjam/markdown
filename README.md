@@ -110,52 +110,107 @@ React `18.2.0`, Next.js `12.2.0`, Node.js `16.13.1`, Prisma `4`, Postgres `14.3`
 
 There are a lot of talk, theory, opinions, and buzz around JavaScript frameworks... but lets stop talking and actually try it out in practice, check how it works and see if we can build something useful and meaningful with it.
 
-## Docs
+<!-- - local, Docker, devcontainers, Gitpod -->
 
-## Table of contents
+## Installation (Development environments)
 
-## Installation (Dev environments)
+1. local environment (quickstart)
 
-- local, Docker, devcontainers, Gitpod
+```bash
+# clone repository
+git clone git@github.com:nemanjam/nextjs-prisma-boilerplate.git
+cd nextjs-prisma-boilerplate
 
-## Next.js (frontend)
+# install dependencies
+yarn install
 
-## next-auth
+# fill in required public environment variables in `.env.development`
+SITE_PROTOCOL=http
+SITE_HOSTNAME=localhost
+PORT=3001
 
-## Next.js (api)
+# create local file form example file
+cp .env.development.local.example .env.development.local
 
-## Database (Prisma)
+# fill in required private environment variables in `.env.development.local`
+# set database connection
+POSTGRES_HOSTNAME=localhost
+POSTGRES_PORT=5432
+POSTGRES_USER=postgres_user
+POSTGRES_PASSWORD=password
+POSTGRES_DB=npb-db-dev
 
-## Data fetching (React Query)
+# fill in rest of the secrets
+# jwt secret
+SECRET=some-long-random-string
 
-## Forms
+# OAuth logins (optional)
+# Facebook (you need https for this)
+FACEBOOK_CLIENT_ID=
+FACEBOOK_CLIENT_SECRET=
 
-## Styling (TailwindCSS)
+# Google
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 
-## Themes
+# run database container
+yarn docker:db:dev:up
 
-## Testing
+# run Prisma migrations (this will create sql tables, database must be running)
+yarn prisma:migrate:dev:env
 
-### Testing (frontend)
+# seed database with data
+yarn prisma:seed:dev:env
 
-### Testing (api)
-
-### Testing (coverage)
-
-## E2E testing (Cypress)
-
-## Docker
-
-## Postgres
-
-## CI/CD (Github Actions)
-
-## Deployment (Traefik)
+# start the app, everything is ready now
+# open http://localhost:3001 in browser
+yarn dev
+```
 
 ## Known issues
 
-## References
-
 ## Contributing
 
+## References
+
 ## License
+
+---
+
+## Docs
+
+## Technical details
+
+#### Next.js (frontend)
+
+#### next-auth
+
+#### Next.js (api)
+
+#### Database (Prisma)
+
+#### Data fetching (React Query)
+
+#### Forms
+
+#### Styling (TailwindCSS)
+
+#### Themes
+
+#### Testing
+
+##### Testing (frontend)
+
+##### Testing (api)
+
+##### Testing (coverage)
+
+#### E2E testing (Cypress)
+
+#### Docker
+
+#### Postgres
+
+#### CI/CD (Github Actions)
+
+#### Deployment (Traefik)
