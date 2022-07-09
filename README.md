@@ -112,9 +112,17 @@ There are a lot of talk, theory, opinions, and buzz around JavaScript frameworks
 
 ## Installation
 
-This project has 3 available development environments: 1. local, 2. Docker (with and without devcontainers) and 3. Gitpod. You can pick whatever environment you prefer.
+This project has 3 available development environments:
 
-#### 1. local environment
+1. local
+2. Docker (with and without devcontainers)
+3. Gitpod
+
+You can pick whatever environment you prefer.
+
+> **Which one to choose?** If you like conventional approach pick local, if you work in a team and want to have consistent environments with colleagues to easily reproduce bugs and quickly onboard new members pick Docker, and if you want to make sandbox do reproduce a bug and ask for help publicly pick Gitpod.
+
+### 1. local environment
 
 Clone repository and install dependencies.
 
@@ -203,7 +211,7 @@ At this point everything is ready, you can now start the app. Open `http://local
 yarn dev
 ```
 
-#### Docker environment
+### Docker environment
 
 Build app container.
 
@@ -233,9 +241,9 @@ Open new terminal inside the container and seed the database, `docker-compose.de
 yarn prisma:seed
 ```
 
-#### Gitpod environment
+### Gitpod environment
 
-Go to [elephantsql.com](https://elephantsql.com) create free account and create free 20MB Postgres database. Go to [gitpod.io](https://gitpod.io/), login with Github. Open your forked repository in Gitpod by opening following link (replace your-username with real one):
+Go to [elephantsql.com](https://elephantsql.com) create free account and create free 20MB Postgres database. Go to [gitpod.io](https://gitpod.io/), login with Github. Open your forked repository in Gitpod by opening following link (replace `your-username` with real one):
 
 ```
 https://gitpod.io/#https://github.com/your-username/nextjs-prisma-boilerplate
