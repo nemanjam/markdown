@@ -20,8 +20,6 @@ Don't spend next 3 months making architectural decisions, choosing libraries, se
 
 ## Screenshots
 
-#### Desktop screen:
-
 https://user-images.githubusercontent.com/9990165/177367837-a2692e5d-b694-454e-806d-21e806465836.mp4
 
 ## How you can use this
@@ -137,6 +135,7 @@ Leave `PORT` as 3001, it is hardcoded in multiple places, if you want to change 
 
 ```bash
 # .env.development
+
 SITE_PROTOCOL=http
 SITE_HOSTNAME=localhost
 PORT=3001
@@ -197,12 +196,86 @@ yarn prisma:migrate:dev:env
 yarn prisma:seed:dev:env
 ```
 
-At this point everything is ready, you can now start the app. Open `http://localhost:3001` in browser to see the running app.
+At this point everything is ready, you can now start the app. Open `http://localhost:3001` in the browser to see the running app.
 
 ```bash
 # start the app in dev mode
 yarn dev
 ```
+
+#### Docker environment
+
+Build app container.
+
+```bash
+# terminal on host
+yarn docker:dev:build
+```
+
+Docker environment will read variables from `envs/development-docker` folder. Create local env file from example file. It has all variables configured already.
+
+```bash
+# terminal on host
+cp envs/development-docker/.env.development.docker.local.example envs/development-docker/.env.development.docker.local
+```
+
+Run the app, database and Adminer containers. That's it. Project folder is mounted to `/app` folder inside container, you can either edit source directly on host or open Remote containers extension tab and right click `npb-app-dev` and select `Attach to Container` and open `/app` folder in remote VS Code instance. Open `http://localhost:3001` in the browser on host to see the running app.
+
+```bash
+# terminal on host
+yarn docker:dev:up
+```
+
+Open new terminal inside the container and seed the database, `docker-compose.dev.yml` already passes correct env files.
+
+```bash
+# terminal inside the container
+yarn prisma:seed
+```
+
+#### Gitpod environment
+
+Go to [elephantsql.com](https://elephantsql.com) create free account and create free 20MB Postgres database. Go to [gitpod.io](https://gitpod.io/), login with Github. Open your forked repository in Gitpod by opening following link (replace your-username with real one):
+
+```
+https://gitpod.io/#https://github.com/your-username/nextjs-prisma-boilerplate
+```
+
+Gitpod environment will read variables from `envs/development-gitpod` folder. Create local env file from example file.
+
+```bash
+# terminal on Gitpod
+cp envs/development-gitpod/.env.development.gitpod.local.example envs/development-gitpod/.env.development.gitpod.local
+```
+
+In that local file set the database url from `elephantsql.com`. Other variables are set automatically.
+
+```bash
+# envs/development-gitpod/.env.development.gitpod.local
+DATABASE_URL=postgres://something:something@tyke.db.elephantsql.com/something
+```
+
+Now migrate and seed the database.
+
+> Note: `elephantsql.com` database doesn't have all privileges so you must use `prisma push` command instead of usual `prisma migrate dev`. Read more details about shadow database in `docs/demo-environments.md`.
+
+```bash
+# terminal on Gitpod
+
+# migrate db
+yarn gitpod:push:env
+
+# seed db
+yarn gitpod:seed:env
+```
+
+Everything is set up, you can now run the app in dev mode and open it in new browser tab.
+
+```bash
+yarn gitpod:dev:env
+```
+
+## Running tests
 
 ## Known issues
 
