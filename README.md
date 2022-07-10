@@ -436,7 +436,7 @@ yarn docker:npb-e2e:up
 
 ## Deployment
 
-I made a separate repository only for deployment with Traefik reverse proxy that needs only environment variables and image from Dockerhub and Github Actions to build, push and redeploy latest image on your server. You should use that for deployment.
+I made a separate repository only for deployment with Traefik reverse proxy that needs only environment variables and image from Dockerhub. There are also Github Actions workflows to build, push and redeploy latest image on your server. You should use that for deployment.
 
 For the sake of completeness I described here how to build and run production app locally and in Docker. These two can be useful as staging environments for testing. I also described how to build and push live image to Dockerhub from your local development machine.
 
