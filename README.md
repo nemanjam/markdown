@@ -161,6 +161,14 @@ cp .env.development.local.example .env.development.local
 
 ```
 
+In all environments Postgres container is configured to run as a current non-root user on a Linux host machine. This is important so that database files in volumes are created with correct ownership and permissions. For this you need to define `MY_UID` and `MY_GID`. Best place to set them is in `~/.bashrc`.
+
+```bash
+# ~/.bashrc
+export MY_UID=$(id -u)
+export MY_GID=$(id -g)
+```
+
 Fill in required **private** environment variables. The only required variables are for Postgres database connection and JWT secret.
 
 > Facebook and Google credentials are optional and used only for OAuth login. Facebook login requires `https` for redirect url. You can set any values for `POSTGRES_USER`, `POSTGRES_PASSWORD` and `POSTGRES_DB`.
@@ -456,7 +464,7 @@ yarn docker:prod:build:env
 yarn docker:prod:up
 ```
 
-#### Build and push live production Docker image locally
+#### Build and push Docker live production image locally
 
 Again you need to set `NEXTAUTH_URL` and `DATABASE_URL` (for SSG) this time in `envs/production-live/.env.production.live.build.local`. Create this file from example file.
 
@@ -483,7 +491,7 @@ yarn docker:live:build
 yarn docker:live:push
 ```
 
-#### Build and push live production Docker image in Github Actions (preferred)
+#### Build and push Docker live production image in Github Actions (preferred)
 
 There is already set up workflow to build and push production image in Github Actions in `.github/workflows/build-docker-image.yml`. In your repository settings you just need to set these variables and run workflow.
 
@@ -577,6 +585,19 @@ FACEBOOK_CLIENT_SECRET=
 # Google
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
+```
+
+#### Redeploy latest Docker live production image on VPS
+
+To avoid manual work there is already Github Actions workflow in `.github/workflows/deploy.yml` that will remove old image and pull and run latest image from Dockerhub using ssh action. All you need to do is to trigger it either manually or chain it on existing build and push workflow.
+
+```yml
+# .github/workflows/deploy.yml
+
+# trigger redeploy with build workflow
+on:
+  workflow_run:
+    workflows: ["docker build"]
 ```
 
 ## Known issues
