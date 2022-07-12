@@ -21,7 +21,7 @@
 
 #### Node.js API testing
 
-- unit - services, controllers, middleware, supretest, pure functions, error responses, prisma
+- unit - services, controllers, middleware, supertest, pure functions, error responses, prisma
 - integration - database, prisma
 
 #### E2E testing - Cypress
@@ -50,7 +50,7 @@
 
 - error handling
 - middleware permissions
-- controller - http, separation of conscernes
+- controller - http, separation of concerns
 - services - db
 
 #### Devcontainers (Docker)
@@ -67,5 +67,5 @@
 
 #### Docker
 
-- env vars, volume perimissions for non-root user
+- env vars, volume permissions for non-root user
 - docker-compose.yml extending
