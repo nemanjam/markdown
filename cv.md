@@ -65,7 +65,9 @@
 
 React landscape changed, once again it made sense to take the most promising libraries from React ecosystem, make a practical project with them, see for myself how they work together in practice and brush up skills with the most up to date knowledge. At present time Next.js is dominant way to work with React, SSR became standard, Prisma is the most interesting ORM in TypeScript world, React Query is high quality library so the choice of libraries wasn't too difficult.
 
-Typically in companies foundation for a project is made by the most experienced developers that need to make good decisions about software architecture, choice of technologies and libraries, establish best practices for writing reliable, testable and maintainable code, so that project can scale well as it grows in future without risk of becoming unmaintainable at some point. I saw challenge in doing that myself and that's why I chose to make such base boilerplate project.
+Typically in companies foundation for a project is made by the most experienced developers that need to make correct decisions about software architecture, choice of technologies and libraries, establish best practices for writing reliable, testable and maintainable code, so that project can scale well as it grows in future without risk of becoming unmaintainable at some point. I saw challenge in doing that myself and that's why I chose to make such base boilerplate project.
+
+This time I made complete foundation for a project including multiple development, testing and production environments, scalable components architecture on frontend, separated concerns with middleware, controllers and services on backend, highly customizable styling with theming support, unit and integration tests for both frontend and backend, automatized end-to-end tests, CI/CD pipelines, detailed documentation, heavily relying on Docker containers in every step of the process.
 
 #### Architectures, Databases (Fundamentals)
 
