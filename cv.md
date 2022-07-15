@@ -49,7 +49,7 @@
 #### Node.js (Prisma)
 
 - error handling
-- middleware permissions
+- middleware for access permissions
 - controller - http, separation of concerns
 - services - db
 
@@ -59,9 +59,13 @@
 
 #### Github Actions
 
-- running tests, databases, secrets, env vars, building Docker images, deployment with ssh
+- running tests, databases, secrets, env vars, building Docker images, deployment with ssh, release semantic versioning
 
 #### Next.js Prisma Boilerplate (Projects)
+
+React landscape changed, once again it made sense to take the most promising libraries from React ecosystem, make a practical project with them, see for myself how they work together in practice and brush up skills with the most up to date knowledge. At present time Next.js is dominant way to work with React, SSR became standard, Prisma is the most interesting ORM in TypeScript world, React Query is high quality library so the choice of libraries wasn't too difficult.
+
+Typically in companies foundation for a project is made by the most experienced developers that need to make good decisions about software architecture, choice of technologies and libraries, establish best practices for writing reliable, testable and maintainable code, so that project can scale well as it grows in future without risk of becoming unmaintainable at some point. I saw challenge in doing that myself and that's why I chose to make such base boilerplate project.
 
 #### Architectures, Databases (Fundamentals)
 
@@ -69,3 +73,5 @@
 
 - env vars, volume permissions for non-root user
 - docker-compose.yml extending
+
+write description for sharing project

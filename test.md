@@ -134,3 +134,5 @@ Here you can find all fundamental decisions for an app already made for you:
 #### Motivation:
 
 There is a lot of talk, and buzz around JavaScript frameworks, a lot of theory, tutorials, opinions... but lets actually take what we read in documentations and check how it works in practice and see if we can build something useful and meaningful with it.
+
+Full stack boilerplate with Next.js, Prisma, Tailwind, TypeScript, Docker, Postgres, documentation, frontend and backend unit and integration tests with Jest, Cypress end-to-end tests, Github Actions CI/CD workflows, and production deployment with Traefik and Docker.
