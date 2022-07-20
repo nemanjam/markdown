@@ -34,6 +34,10 @@ If you use it to build something on top of it don't be shy to send me a message 
 
 All this is completely free, Github repository is in the link bellow. Also I deployed live production demo that you can try out.
 
-Demo link: https://nextjs-prisma-boilerplate.localhost3000.live
+Demo link:
 
-Github repository: https://github.com/nemanjam/nextjs-prisma-boilerplate
+https://nextjs-prisma-boilerplate.localhost3000.live
+
+Github repository:
+
+https://github.com/nemanjam/nextjs-prisma-boilerplate
