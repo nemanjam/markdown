@@ -1,6 +1,20 @@
 
 For learning resources I used extensive _"Core Python learning path"_ on Pluralsight including _"Core Python 3: Getting-Started"_, _"Python 3: Beyond the Basics"_ and _"Advanced Python"_ by Austin Bingham and Robert Smallshire, _"Managing Python Packages and Virtual Environments"_ and _"Python Best Practices for Code Quality"_ from Reindert-Jan Ekker, and also _"Python Programming Tutorial for a JavaScript Developer"_ Youtube tutorial by Get it Done, _"Python for JavaScript Developers"_ blog article by Valentino Galigardi, _"Python Tutorials"_ Youtube playlist by Corey Schafer, _"Fullstack Flask - Build a Complete SaaS App with Flask"_ by Sumukh Sridhara, _"Python Crash Course For Beginners"_ and _"Pipenv Crash Course"_ Youtube tutorials by Brad Traversy, _"Python Tutorial for Programmers - Python Crash Course"_ Youtube tutorial by Mosh Hamedani, _"flask_for_startups"_ Github repository example by nuvic. There is real abundance of learning material for Python on internet.
 
+Python is general purpose, multi-paradigm, interpreted, garbage collected, dynamically typed language with comprehensive standard library, _scalar types_ - all immutable, int, float, None, bool, _control flow_ - if, else, elif, _loops_ - while, for, _relational operators_, _logical operators_, _in_ - membership operator, _is_ - identity operator, _str_ - immutable string type, _bytes_ - binary type, _modules_ - .py files, _ __name__ attribute _ - detect if file is imported or executed in shell, _python execution model_ - function name is bound to definition at runtime, _passing command line arguments_, _shebang_, _docstrings_, _object and type models_, _identity equality_ - defined on language level, _value equality_ - defined on type level, _all variables are references, not boxes_, _pass by reference_ - both arguments and return values, _positional and keyword arguments_, _strong, dynamic type system_, _4 levels scope - LEGB_ - local, enclosing, global, built in, _everything is an object_ - including scalar types, functions and modules, 
+
+---
+
+Python is general purpose, multi-paradigm, interpreted, garbage collected, dynamically typed language with comprehensive standard library, 
+
+_scalar types_ - all immutable, int, float, None, bool, _control flow_ - if, else, elif, _loops_ - while, for, _relational operators_, _logical operators_, _in_ - membership operator, _is_ - identity operator,
+
+_str_ - immutable string type, _bytes_ - binary type, 
+
+_modules_ - .py files, _ __name__ attribute _ - detect if file is imported or executed in shell, _python execution model_ - function name is bound to definition at runtime, _passing command line arguments_, _shebang_, _docstrings_, 
+
+_object and type models_, _identity equality_ - defined on language level, _value equality_ - defined on type level, _all variables are references, not boxes_, _pass by reference_ - both arguments and return values, _positional and keyword arguments_, _strong, dynamic type system_, _4 levels scope - LEGB_ - local, enclosing, global, built in, _everything is an object_ - including scalar types, functions and modules, 
+
 
 
 ### Big Picture
