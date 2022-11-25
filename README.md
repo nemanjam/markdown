@@ -187,7 +187,27 @@ _bitwise operators_ - and, or, xor, not, left and right shift, _bin() and to_byt
 
 #### Abstract Base Classes
 
+---
 
+### Managing Python Packages and Virtual Environments
+
+#### Managing Python Packages with pip
+
+#### Setting up Your Project with Virtual Environments
+
+#### Using virtualenvwrapper to Make Your Life Easier
+
+#### Choosing the Right Tools
+
+---
+
+### Python Best Practices for Code Quality
+
+#### Following Python Style Guidelines: PEP8 and Pylint
+
+#### Documenting Your Project
+
+#### Improve Your Code with Type Checking
 
 
 
