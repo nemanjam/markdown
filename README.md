@@ -1,9 +1,7 @@
 
 For learning resources I used extensive _"Core Python learning path"_ on Pluralsight including _"Core Python 3: Getting-Started"_, _"Python 3: Beyond the Basics"_ and _"Advanced Python"_ by Austin Bingham and Robert Smallshire, _"Managing Python Packages and Virtual Environments"_ and _"Python Best Practices for Code Quality"_ from Reindert-Jan Ekker, and also _"Python Programming Tutorial for a JavaScript Developer"_ Youtube tutorial by Get it Done, _"Python for JavaScript Developers"_ blog article by Valentino Galigardi, _"Python Tutorials"_ Youtube playlist by Corey Schafer, _"Fullstack Flask - Build a Complete SaaS App with Flask"_ by Sumukh Sridhara, _"Python Crash Course For Beginners"_ and _"Pipenv Crash Course"_ Youtube tutorials by Brad Traversy, _"Python Tutorial for Programmers - Python Crash Course"_ Youtube tutorial by Mosh Hamedani, _"flask_for_startups"_ Github repository example by nuvic. There is real abundance of learning material for Python on internet.
 
-Python is general purpose, multi-paradigm, interpreted, garbage collected, dynamically typed language with comprehensive standard library, _scalar types_ - all immutable, _relational operators_, _logical operators_, _in_ - membership operator, _is_ - identity operator, _str_ - immutable string type, _bytes_ - binary type, _modules_ - .py files, _python execution model_, _passing command line arguments_, _shebang_, _docstrings_, _object and type models_, _identity equality_, _value equality_, _references, not boxes_, _pass by reference_, _positional and keyword arguments_, _strong, dynamic type system_, _4 levels scope - LEGB_ - local, enclosing, global, built in, _everything is an object_, _list [...], tuple (...), ranges, dictionary {key: val}, set {...}_ - built in collections, _protocols_ - interface, _try, except, raise, finally_ - exceptions, _EAFP_ - easier to ask forgiveness than permission, _LBYL_ - look before you leap, _comprehensions_, _generator functions_ - iterables defined via functions, _iteration protocols_ - iter() and next(), _generator expressions_, _classes_ - custom types, _self_ - this, _ __init__() _ - initializer, _methods_, _no access modifiers_ - public, _invariants_ - constraints, _duck typing_ - argument fitness determined at runtime, _late binding_ - use object to resolve method calling at runtime, _polymorphism_ - through late binding, _inheritance_ - used only for reuse, _files and file like objects_ - text and binary mode, _universal newline_ - OS independent, _with block_, _packages_ - folders, _modules_ - files, _sys.path_, _PYTHONPATH_, _ __init__.py_, _subpackages_, _relative imports_, _namespace packages_, _executable directories_, _recommended layout_, _module singletons_, _positional, keyword and default arguments_, _callable instances_, _callables_, _conditional expressions_, _lambdas_ - single expression anonymous functions, _extended formal and actual arguments syntax_, _unpacking_ - destructuring, _global and local functions_, _closures_ - maintain references from parent scopes, _function factories_, _nonlocal and global keywords_, _decorators_ - syntactic sugar for higher oder functions, _@functools.wraps()_ - forwarding metadata, _instance attributes_, _class attributes_, _@staticmethod_, _@classmethod_, _@property_ - property getter, _@name.setter_ - property setter, _str(), repr()_ - simple and verbose representation, _format()_, _ascii(), ord(), chr()_ - ascii, unicode helpers, _int, float, Decimal, Fraction, complex()_ - number types, _abs(), round()_ - math helpers, _bin(), oct(), hex(), int()_ - base conversion, _datetime module_, _advanced comprehensions_, _map(), filter(), reduce()_, _iter(iterable)_ - iterable protocol, _next(iterator)_ - iterator protocol, _single and multiple inheritance_, _isinstance(), issubclass()_, _method resolution order - MRO_ - search order of inheritance graph, _super()_, _collection protocols_, _collections.abc_ - base collection protocols, _standard exception hierarchy_, _custom exceptions_, _implicit and explicit chaining exceptions_, _traceback objects_, _asserts_, _context manager protocol_, _@contextlib.contextmanager_ - decorator, _introspection_ - programs can inspect their own structure and state, _while else, for else clauses_, _try else clause_, _emulating switch statements_, _bitwise operators_, _bin(), to_bytes()_, _bytes and bytearray type_ - immutable and mutable sequences, _reading C structures_, _memoryview, memory mapped files_, _object internal representation as dictionary_ - attributes in obj.__dict__, methods in obj.__class__.__dict__, _descriptors_ - property objects that implement descriptor protocol, getter and setter equivalent, _instance allocation and initialization_, _metaclasses_ - convert class definition into a class object, customization of class creation, type of a class object, _class decorators_ - simpler and less powerful metaclasses alternative, _abstract base classes_ - customizable with metamethods, _abc module_ - tools for ABCs, _@abstractmethod_ - prevent instantiation of incomplete subclasses, 
-
-
+Python is general purpose, multi-paradigm, interpreted, garbage collected, dynamically typed language with comprehensive standard library, _scalar types_ - all immutable, _relational operators_, _logical operators_, _in_ - membership operator, _is_ - identity operator, _str_ - immutable string type, _bytes_ - binary type, _modules_ - .py files, _python execution model_, _passing command line arguments_, _shebang_, _docstrings_, _object and type models_, _identity equality_, _value equality_, _references, not boxes_, _pass by reference_, _positional and keyword arguments_, _strong, dynamic type system_, _4 levels scope - LEGB_ - local, enclosing, global, built in, _everything is an object_, _list [...], tuple (...), ranges, dictionary {key: val}, set {...}_ - built in collections, _protocols_ - interface, _try, except, raise, finally_ - exceptions, _EAFP_ - easier to ask forgiveness than permission, _LBYL_ - look before you leap, _comprehensions_, _generator functions_ - iterables defined via functions, _iteration protocols_ - iter() and next(), _generator expressions_, _classes_ - custom types, _self_ - this, _ __init__() _ - initializer, _methods_, _no access modifiers_ - public, _invariants_ - constraints, _duck typing_ - argument fitness determined at runtime, _late binding_ - use object to resolve method calling at runtime, _polymorphism_ - through late binding, _inheritance_ - used only for reuse, _files and file like objects_ - text and binary mode, _universal newline_ - OS independent, _with block_, _packages_ - folders, _modules_ - files, _sys.path_, _PYTHONPATH_, _ __init__.py_, _subpackages_, _relative imports_, _namespace packages_, _executable directories_, _recommended layout_, _module singletons_, _positional, keyword and default arguments_, _callable instances_, _callables_, _conditional expressions_, _lambdas_ - single expression anonymous functions, _extended formal and actual arguments syntax_, _unpacking_ - destructuring, _global and local functions_, _closures_ - maintain references from parent scopes, _function factories_, _nonlocal and global keywords_, _decorators_ - syntactic sugar for higher oder functions, _@functools.wraps()_ - forwarding metadata, _instance attributes_, _class attributes_, _@staticmethod_, _@classmethod_, _@property_ - property getter, _@name.setter_ - property setter, _str(), repr()_ - simple and verbose representation, _format()_, _ascii(), ord(), chr()_ - ascii, unicode helpers, _int, float, Decimal, Fraction, complex()_ - number types, _abs(), round()_ - math helpers, _bin(), oct(), hex(), int()_ - base conversion, _datetime module_, _advanced comprehensions_, _map(), filter(), reduce()_, _iter(iterable)_ - iterable protocol, _next(iterator)_ - iterator protocol, _single and multiple inheritance_, _isinstance(), issubclass()_, _method resolution order - MRO_ - search order of inheritance graph, _super()_, _collection protocols_, _collections.abc_ - base collection protocols, _standard exception hierarchy_, _custom exceptions_, _implicit and explicit chaining exceptions_, _traceback objects_, _asserts_, _context manager protocol_, _@contextlib.contextmanager_ - decorator, _introspection_ - programs can inspect their own structure and state, _while else, for else clauses_, _try else clause_, _emulating switch statements_, _bitwise operators_, _bin(), to_bytes()_, _bytes and bytearray type_ - immutable and mutable sequences, _reading C structures_, _memoryview, memory mapped files_, _object internal representation as dictionary_ - attributes in obj.__dict__, methods in obj.__class__.__dict__, _descriptors_ - property objects that implement descriptor protocol, getter and setter equivalent, _instance allocation and initialization_, _metaclasses_ - convert class definition into a class object, customization of class creation, type of a class object, _class decorators_ - simpler and less powerful metaclasses alternative, _abstract base classes_ - customizable with metamethods, _abc module_ - tools for ABCs, _@abstractmethod_ - prevent instantiation of incomplete subclasses, _pip_ - manage packages, _virtualenv, venv_ - isolated, per project dependencies and runtime, _pipenv, poetry_ - deterministic dependency management, 
 
 ---
 
@@ -53,6 +51,8 @@ _context manager protocol_, _@contextlib.contextmanager_ - decorator,
 
 _introspection_ - programs can inspect their own structure and state,
 
+---
+
 _while else, for else clauses_, _try else clause_, _emulating switch statements_, 
 
 _bitwise operators_, _bin(), to_bytes()_, _bytes and bytearray type_ - immutable and mutable sequences, _reading C structures_, _memoryview, memory mapped files_, 
@@ -69,6 +69,13 @@ _class decorators_ - simpler and less powerful metaclasses alternative,
 
 _abstract base classes_ - customizable with metamethods, _abc module_ - tools for ABCs, _@abstractmethod_ - prevent instantiation of incomplete subclasses, 
 
+---
+
+_pip_ - manage packages,
+
+_virtualenv, venv_ - isolated, per project dependencies and runtime, 
+
+_pipenv, poetry_ - deterministic dependency management, 
 
 ---
 
@@ -219,11 +226,19 @@ _abstract base classes_ - customizable with metamethods, _abc module_ - tools fo
 
 #### Managing Python Packages with pip
 
+_pip_ - manage packages,
+
 #### Setting up Your Project with Virtual Environments
+
+_virtualenv, venv_ - isolated, per project dependencies and runtime, 
 
 #### Using virtualenvwrapper to Make Your Life Easier
 
+utility tool
+
 #### Choosing the Right Tools
+
+_pipenv, poetry_ - deterministic dependency management, 
 
 ---
 
