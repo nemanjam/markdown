@@ -114,7 +114,7 @@ _str_ - immutable string type and literals, _bytes_ - binary type, encoding and 
 
 #### Modularity
 
-_modules_ - .py files, _ \_\_name\_\_ attribute _ - detect if file is imported or executed in shell, _python execution model_ - function name is bound to definition at runtime, _sys.argv[...]_ - passing command line arguments, _main()_ - custom entry point for a python script, _shebang_ - run python file as shell script, _docstrings_ - singleline and multiline, 
+_modules_ - .py files, _\_\_name\_\_ attribute_ - detect if file is imported or executed in shell, _python execution model_ - function name is bound to definition at runtime, _sys.argv[...]_ - passing command line arguments, _main()_ - custom entry point for a python script, _shebang_ - run python file as shell script, _docstrings_ - singleline and multiline, 
 
 #### Objects and Types
 
